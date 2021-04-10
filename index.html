@@ -5,11 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="database.js"></script>
+    <script defer src="app.js"></script>
     <title>Filmzoeker</title>
 </head>
 
 <body>
+    <header class="header">
+        <h1>Welkom bij De winc Filmzoeker</h1>
+        <nav class="nav">
+            <label for="lastFilm">Laatste Films, 2014 of nieuwer</label>
+            <input type="radio" value="Laatste Films" name="film-filter" id="lastFilm">
 
+            <label for="AvengerFilm">Avenger Films</label>
+            <input type="radio" value="Avenger Films" name="film-filter" id="AvengerFilm">
+
+            <label for="X-Men">X-Men Films</label>
+            <input type="radio" value="X-Men Films" name="film-filter" id="X-Men">
+
+            <label for="Princess">Princess Films</label>
+            <input type="radio" value="Princess Films" name="film-filter" id="Princess">
+
+            <label for="Batman">Batman Films</label>
+            <input type="radio" value="Batman Films" name="film-filter" id="Batman">
+        </nav>
+    </header>
+    <main class="main">
+        <ul class="main__movies-places" id="movies-places"></ul>
+    </main>
 </body>
 
 </html>

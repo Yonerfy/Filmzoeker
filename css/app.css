@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  margin: 0 auto;
+  width: 1300px;
+}
+
+body .header h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+}
+
+body .header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .header .nav label {
+  margin-right: 50px;
+}
+
+body .header .nav .filter-movies {
+  width: 300px;
+  height: 25px;
+  border: solid 2px white;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+body .main .main__movies-places {
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+body .main .main__movies-places li img {
+  width: 300px;
+  height: 409px;
+}
+/*# sourceMappingURL=app.css.map */

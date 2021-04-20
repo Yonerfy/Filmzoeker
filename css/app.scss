@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap');
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    margin: 0 auto;
+    width: 1300px;
+   
+    .header{
+        
+        h1{
+            font-weight: bold;
+            text-align: center;
+            font-size: 50px;
+        }
+        .nav{
+           
+            display: flex;
+            justify-content: space-between;
+            label{
+                margin-right: 50px;
+            }
+            .filter-movies{
+                width: 300px ;
+                height: 25px;
+                border: solid 2px white;
+                border-radius: 15px;
+                background-color: black;
+                color: white;
+                font-size: 20px;
+            }
+        
+        }   
+    }
+    .main{
+    
+        .main__movies-places{
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 30px;
+            li {
+                img{
+                    width: 300px;
+                    height: 409px;
+                }
+            }
+        }
+    }
+}
